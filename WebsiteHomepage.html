@@ -1,0 +1,213 @@
+<html>
+    <head>
+        <title>
+            Hunger and Poverty
+        </title>
+        <link rel="icon" href="favicon.ico" type="image" sizes="16x16">
+    </head>
+    <style>
+        body 
+        {
+            background-color: rgb(148, 97, 142);
+        }
+        h1
+        {
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            color: white;
+            font-size: 80px;
+			background-color: rgb(73, 39, 74);
+			text-align: center;
+			border-style: solid;
+			border-width: 50px;
+            margin-top: 5%;
+			border-color: rgb(73, 39, 74);
+            border-radius: 12px;
+        }
+        .hungerImage
+        {
+            border-radius: 10%;
+        }
+        .btn
+        {
+            float: left;
+            overflow: hidden;
+            background-color: rgb(244, 237, 203);
+            position:fixed;
+            top: 0;
+            width: 99%;
+            border-radius: 12px;
+        }
+            
+        .btn a
+        {
+            float: left;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            display: block
+        }
+        .donate
+        {
+            text-decoration: none;
+            margin-left: 40%;
+            margin-right: 40%;
+            display: block;
+            background-color: rgb(244, 237, 203);
+            border: none; 
+            color: black; 
+            font-size: 16px; 
+            cursor: pointer; 
+            padding-left: 4%;
+            padding-right: 4%;
+            padding-bottom: 1%;
+            padding-top: 1%;
+            text-align: center
+        }
+        .text
+        {
+            font-size: x-large;
+            text-align: center;
+            margin-right: 12%;
+            margin-left: 12%
+        }
+        .btnDonate
+        {
+            float: right;
+            overflow: hidden;
+            top: 0;
+            margin-left: 55%;
+        }
+        .btnDonate:hover
+        {
+            color:white;
+            background-color: rgb(73, 39, 74);
+            transition-duration: 0.5s;
+        }
+        .hover:hover 
+        {
+            color:white;
+            background-color: rgb(73, 39, 74);
+            transition-duration: 0.5s;
+        } 
+        .flip-card 
+        {
+            width: 680px;
+            height: 470px;
+            perspective: 1000px;
+            border-radius: 10%;
+        }
+        .flip-card-inner 
+        {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 1.5s;
+            transform-style: preserve-3d;
+        }
+        .flip-card:hover .flip-card-inner 
+        {
+            transform: rotateY(180deg);
+        }
+        .flip-card-front, .flip-card-back 
+        {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            border-radius: 10%;
+        }
+        .flip-card-front 
+        {
+            background-color: rgb(148, 97, 142);
+            color: black;
+            border-radius: 10%;
+        }
+        .flip-card-back 
+        {
+            background-color: rgb(248, 238, 231);
+            color: black;
+            transform: rotateY(180deg);
+            border-radius: 10%;
+        }
+        .firstflexbox
+        {
+            background: rgb(148, 97, 142); 
+            display: flex;
+            align-items: center;
+            padding: 5px;
+        }
+        .secondflexbox
+        {
+            flex: 1; 
+            background-color: rgb(148, 97, 142);
+            padding: 5px;
+            margin: 10px;   
+            text-align: center;
+            font-size: 30px;
+        }
+        .flexboxes 
+        {
+            font-size: 25px;
+        }   
+        ol
+        {
+            list-style:circle;
+            font-size: 20px;
+            text-align:left;
+            padding-right: 1%;
+        }
+    </style>
+    <body>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <div class="btn">
+            <a href="WebsiteHomepage.html" class="hover"><i class="fa fa-fw fa-home"></i>Home</a>
+            <a href="What is it.html" class="hover"><i class="fa fa-fw fa-info-circle"></i>What Is It?</a>
+            <a href="How You Can Help.html" class="hover">How You Can Help</a>
+            <a href="quiz.html" class="hover">Test Your Knowledge!</a>
+            <a href="donate.html" class="btnDonate">Donate</a>
+        </div>
+        <h1>Hunger and Poverty</h1>
+        <br>
+        <p class="text">Hunger is a huge problem that affects 690 million people around the world. On this website you'll find an abundance of information about hunger and how you can help!</p>
+        <br>
+        <a href="donate.html" class="donate">Donate</a>
+        <br>
+        <br>
+        <div class="firstflexbox">
+            <div class="secondflexbox">
+            <div class="flip-card">
+            <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fronaldholden%2Ffiles%2F2017%2F07%2FHunger.jpg" class="hungerImage" style="width:680px;height:470px;">
+            </div>
+            <div class="flip-card-back">
+              <h3>Hunger Facts</h3> 
+              <ol>	
+                <li>Over 9 million people die of hunger each year worldwide</li>
+                <br>
+                <li>Hunger can cause many chronic diseases such as high blood pressure, diabetes, and even heart disease</li>
+                <br>
+                <li>The amount of people experiencing hunger world-wide has declined from 15% in the 2000s to 8.9% in 2018. We are making lots of progress to hopefully put an end to this crisis, but we still have long ways to go.</li>
+              </ol>
+            </div>
+          </div>
+        </div></div>
+            <div class="secondflexbox">
+            <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="https://www.unitedway.org/i/blog/10.15.19_5_Surprising_Facts_about_Hunger_in_America_Blog-reupload.jpg" class="hungerImage" style="width:680px;height:470px;">
+            </div>
+            <div class="flip-card-back">
+              <h3>How Donating Helps</h3> 
+             <p class="flexboxes">Donating can help in many ways towards people in need and suffereing from hunger including:</p>
+              <ol>	
+                  <li>All the money that is donated to non-profit organizations all go directly to help stop hunger</li>
+                  <br>
+                <li>Organizations help provide people with food, and maybe even help develop ways to make sure that people can consistently get food.</li>
+              </ol>
+    </body>
+</html>

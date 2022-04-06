@@ -1,0 +1,228 @@
+<html>
+    <head>
+         <title>
+            Hunger and Poverty
+         </title>
+         <link rel="icon" href="favicon.ico" type="image" sizes="16x16">
+    </head>
+    <style>
+        *
+        {
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+        body
+        {
+            background-color: rgb(148, 97, 142);
+        }
+        h1
+        {
+            color: white;
+            font-size: 80px;
+			background-color: rgb(73, 39, 74);
+			text-align: center;
+			border-style: solid;
+			border-width: 50px;
+            margin-top: 5%;
+			border-color: rgb(73, 39, 74);
+            border-radius: 12px;
+        }
+        .btn
+        {
+            float: left;
+            overflow: hidden;
+            background-color: rgb(244, 237, 203);
+            position:fixed;
+            top: 0;
+            width: 99%;
+            border-radius: 12px;
+        }
+        .btn a
+        {
+            float: left;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            display: block
+        }
+        .donate
+        {
+            text-decoration: none;
+            margin-left: 40%;
+            margin-right: 40%;
+            display: block;
+            background-color: rgb(244, 237, 203);
+            border: none; 
+            color: black; 
+            font-size: 16px; 
+            cursor: pointer; 
+            padding-left: 4%;
+            padding-right: 4%;
+            padding-bottom: 1%;
+            padding-top: 1%;
+            text-align: center
+        }
+        .text
+        {
+            text-align: center;
+            font-size: 24px;
+        }
+        .textOne
+        {
+            margin-right: 10%;
+            font-size: 24px;
+        }
+        .btnDonate
+        {
+            float: right;
+            overflow: hidden;
+            top: 0;
+            margin-left: 52%;
+        }
+        .btnDonate:hover
+        {
+            color:white;
+            background-color: rgb(73, 39, 74);
+            transition-duration: 0.5s;
+        }
+        .hover:hover 
+        {
+            color:white;
+            background-color: rgb(73, 39, 74);
+            transition-duration: 0.5s;
+        } 
+        td
+        {
+            font-size: 20px;
+            padding-left: 11.5%;
+        }
+        .button
+        {
+            background-color: rgb(244, 237, 203);
+            border-radius: 12px;
+            border: none; 
+            color: black; 
+            font-size: 24px; 
+            cursor: pointer; 
+            padding-left: 4%;
+            padding-right: 4%;
+            padding-bottom: 1%;
+            padding-top: 1%;
+            text-align: center
+        }
+        button:hover
+        {
+            color: white;
+            background-color: rgb(73, 39, 74);
+            transition-duration: 0.5s;
+            border-radius: 12px;
+        }
+    </style>
+    <body>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <div class="btn">
+            <a href="WebsiteHomepage.html" class="hover"><i class="fa fa-fw fa-home"></i>Home</a>
+            <a href="What is it.html" class="hover"><i class="fa fa-fw fa-info-circle"></i>What Is It?</a>
+            <a href="How You Can Help.html"  class="hover">How You Can Help</a>
+            <a href="quiz.html" class="hover">Test Your Knowledge!</a>
+            <a href="donate.html" class="btnDonate">Donate</a>
+        </div>
+        <h1>Test Your Knowledge!</h1>
+        <p class="text">Test what you've learned in this quiz!</p>
+        <br>
+        <br>
+        <table width=100%>
+            <tr>
+                <td>
+                    Select All The Statements That Are True<br>
+                    <br>
+                    <input type="checkbox" id="t1">The most common reason for hunger is poverty<br>
+                    <input type="checkbox" id="t2">Hunger mostly takes place in Africa<br>
+                    <input type="checkbox" id="nt1">The most common reason for hunger is not working enough<br>
+                    <input type="checkbox" id="t3">For many people, it is very hard to get out of the hunger cycle<br>
+                    <input type="checkbox" id="nt2">Hunger mostly takes place in North America<br>
+                    <br>
+                    <button onclick="checkAnswers()" class="button">See Your Results</button>
+                    <h3 id="result">&nbsp;</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="textOne">Give Me Feedback!</p>
+                    Rate the quality of my site from 1-5<br>
+                    <br>
+                    <input type="radio" name = "favCharacter" id="o1">1/5<br>
+                    <input type="radio" name = "favCharacter" id="o2">2/5<br>
+                    <input type="radio" name = "favCharacter" id="o3">3/5<br>
+                    <input type="radio" name = "favCharacter" id="o4">4/5<br>
+                    <input type="radio" name = "favCharacter" id="o5">5/5<br>
+                    <br>
+                    <button onclick="checkOption()" class="button">Submit</button>
+                    <h3 id="rating">&nbsp;</h3>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <script type="text/javascript">
+            function checkOption()
+            {
+                console.log("Got here");
+                if (document.getElementById('o1').checked)
+                {
+                    document.getElementById('rating').innerHTML = "I'm sorry that you feel that way, I'll make sure to do my best to improve my site!";
+                }
+                if (document.getElementById('o2').checked)
+                {
+                    document.getElementById('rating').innerHTML = "I'm sorry that you feel that way, I'll make sure to do my best to improve my site!";
+                }
+                if (document.getElementById('o3').checked)
+                {
+                    document.getElementById('rating').innerHTML = "Thank you for your feedback. I'm glad that my website was somewhat useful. From now on, I'll make sure to make it the best it can be!";
+                }
+                if (document.getElementById('o4').checked)
+                {
+                    document.getElementById('rating').innerHTML = "I'm glad you thought my website was good! I hope you learned some valuable information, and thank you very much for leaving the feedback.";
+                }
+                if (document.getElementById('o5').checked)
+                {
+                    document.getElementById('rating').innerHTML = "I'm glad you thought my website was great! I hope you learned some valuable information, and thank you very much for leaving the feedback.";
+                }
+            }
+
+            function checkAnswers()
+            {
+                correctAnswers = 0;
+                if (document.getElementById('t1').checked)
+                {
+                    correctAnswers++;
+                }
+                if (document.getElementById('t2').checked)
+                {
+                    correctAnswers++;
+                }
+                if (document.getElementById('t3').checked)
+                {
+                    correctAnswers++;
+                }
+
+                if (!document.getElementById('nt1').checked)
+                {
+                    correctAnswers++;
+                }
+                if (!document.getElementById('nt2').checked)
+                {
+                    correctAnswers++;
+                }
+                if (correctAnswers == 5)
+                {
+                    document.getElementById('result').innerHTML = "Congratulations, you got them all right.";
+                }
+                else
+                {
+                    document.getElementById('result').innerHTML = "Sorry, try again. You only got " + correctAnswers + " right. Try going back to my site to get a better understanding of the information.";
+                }
+            }
+        </script>
+
+    </body>
+</html>
